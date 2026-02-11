@@ -18,7 +18,7 @@ def get_search_params(user_input):
     return json.loads(response.content[0].text)
 
 
-user_input = "I want a book for a romantic candlelight dinner vibe"
+user_input = "I want fiction novels about British naval warfare set in the 19th century."
 params = get_search_params(user_input)
 print(f"Search params: {params}\n")
 
